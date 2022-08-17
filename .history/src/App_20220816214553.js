@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Grid } from "@mater";
-import { SearchBar } from "./components/SearchBar";
+import { SeachBar } from "./components/SearchBar";
 import { VideoList } from "./components/VideoList";
 import { VideoDetail } from "./components/VideoDetail";
 

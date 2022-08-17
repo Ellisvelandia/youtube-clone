@@ -1,9 +1,6 @@
 import React from "react";
 import "./App.css";
 import { Grid } from "@mater";
-import { SearchBar } from "./components/SearchBar";
-import { VideoList } from "./components/VideoList";
-import { VideoDetail } from "./components/VideoDetail";
 
 import youtube from "./api/youtube";
 
@@ -16,12 +13,7 @@ class App extends React.Component {
             <Grid item xs={12}>
               {/* SEARCH BAR */}
             </Grid>
-            <Grid item xs={8}>
-              {/* VIDEO DETAILS */}
-            </Grid>
-            <Grid item xs={4}>
-              {/* VIDEO LIST */}
-            </Grid>
+            <Grid item xs={8}></Grid>
           </Grid>
         </Grid>
       </Grid>
