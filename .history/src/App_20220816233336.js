@@ -7,8 +7,8 @@ import { SearchBar, VideoDetail } from "./components/index";
 import youtube from "./api/youtube";
 
 class App extends React.Component {
-handleSubmit = async (SearchTerm) => {
-const response = await youtube.get('search', {params: {q: searchTerm}});
+handleSubmit = async (SearchTerm) = {
+    const response = await youtube.get('search', {params: {q: searchTerm}});
     
     console.log(response);
   }
