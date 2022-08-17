@@ -8,14 +8,8 @@ import youtube from './api/youtube'
 
 class App extends React.Component {
   handleSubmit = async searchTerm => {
-    const response = await youtube.get('search', {
-      params: {
-        part: 'snippet',
-        maxResults: 5,
-        key: '[API_KEY]',
-        q: searchTerm
-      }
-    })
+    const response = await youtube.get('search', { params: { q: searchTerm } })
+   
     console.log(response)
   }
 

@@ -10,14 +10,14 @@ class App extends React.Component {
   handleSubmit = async searchTerm => {
     const response = await youtube.get('search', {
       params: {
-        part: 'snippet',
+        part: "snippet",
         maxResults: 5,
-        key: '[API_KEY]',
-        q: searchTerm
-      }
-    })
+        key: "[API KEY]",
+      },
+  });
     console.log(response)
-  }
+}
+
 
   render () {
     return (
