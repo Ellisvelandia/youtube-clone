@@ -23,12 +23,12 @@ class App extends React.Component {
     })
     this.setState({
       videos: response.data.items,
-      selectedVideo: response.data.items[0]
+      selectVideo: response.data.items[0]
     })
   }
 
   render () {
-    const { selectedVideo } = this.state
+    const { selectVideo } = this.state
     return (
       <Grid justify='center' container spacing={10}>
         <Grid item xs={11}>
