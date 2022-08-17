@@ -7,7 +7,7 @@ import youtube from './api/youtube'
 
 class App extends React.Component {
   state = {
-    videos: [],
+    video: [],
     selectedVideo: null
   }
 
@@ -27,7 +27,7 @@ class App extends React.Component {
   }
 
   render () {
-    const { selectedVideo, videos } = this.state
+    const { selectedVideo } = this.state
     return (
       <Grid justify='center' container spacing={10}>
         <Grid item xs={11}>
@@ -39,7 +39,7 @@ class App extends React.Component {
               <VideoDetail video={selectedVideo} />
             </Grid>
             <Grid item xs={4}>
-              <VideoList videos={videos}/>
+              <>
             </Grid>
           </Grid>
         </Grid>
