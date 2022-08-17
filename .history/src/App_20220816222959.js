@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
-import { Grid } from "@material-ui/core";
-import { SearchBar, VideoDetail } from "./components/index";
+import { Grid } from "@mater";
+import { SearchBar } from "./components/SearchBar";
 // import { VideoList } from "./components/VideoList";
+import { VideoDetail } from "./components/VideoDetail";
 
 import youtube from "./api/youtube";
 
