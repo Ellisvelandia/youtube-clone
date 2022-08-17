@@ -11,10 +11,6 @@ class App extends React.Component {
     selectedVideo: null
   }
 
-  onVideoSelect = (video) => {
-this.setState ({selectedVideo: video})
-  }
-
   handleSubmit = async searchTerm => {
     const response = await youtube.get('search', {
       params: {

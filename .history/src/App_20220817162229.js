@@ -11,8 +11,8 @@ class App extends React.Component {
     selectedVideo: null
   }
 
-  onVideoSelect = (video) => {
-this.setState ({selectedVideo: video})
+  onVideoSelect = () => {
+    
   }
 
   handleSubmit = async searchTerm => {
