@@ -14,7 +14,7 @@ class App extends React.Component {
         <Grid item xs={11}>
           <Grid container spacing={16}>
             <Grid item xs={12}>
-              <SearchBar></SearchBar>
+              <Search></Search>
             </Grid>
             <Grid item xs={8}>
               <VideoDetail></VideoDetail>
