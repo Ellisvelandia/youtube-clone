@@ -5,7 +5,7 @@ import { Paper, Typography } from '@material-ui/core'
 const VideoDetail = ({ video }) => {
   if (!video) return <div>Loading...</div>
 
-  console.log(video)
+  console.log(video);
 
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`
 
@@ -17,7 +17,7 @@ const VideoDetail = ({ video }) => {
           height='100%'
           width='100%'
           title='Video Player'
-          src={videoSrc}
+          src='videoSrc'
         />
       </Paper>
       <Paper elevation={6} style={{ padding: '15px' }}>

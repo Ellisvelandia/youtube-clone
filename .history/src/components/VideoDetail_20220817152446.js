@@ -17,7 +17,7 @@ const VideoDetail = ({ video }) => {
           height='100%'
           width='100%'
           title='Video Player'
-          src={videoSrc}
+          src='videoSrc'
         />
       </Paper>
       <Paper elevation={6} style={{ padding: '15px' }}>
@@ -35,4 +35,4 @@ const VideoDetail = ({ video }) => {
   )
 }
 
-export default VideoDetail;
+export default VideoDetail
