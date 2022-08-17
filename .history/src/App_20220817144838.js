@@ -7,10 +7,8 @@ import { SearchBar, VideoDetail } from './components/index'
 import youtube from './api/youtube'
 
 class App extends React.Component {
-  state = {
-    viddeo: [],
-    selectVideo: null
-  }
+state = []
+
 
   handleSubmit = async searchTerm => {
     const response = await youtube.get('search', {
@@ -21,10 +19,7 @@ class App extends React.Component {
         q: searchTerm
       }
     })
-    this.setState({
-      videos: response.data.items,
-      selectVideo: response.data.items[0]
-    })
+    console.log(response.data.items)
   }
 
   render () {

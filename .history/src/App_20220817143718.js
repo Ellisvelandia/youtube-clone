@@ -7,24 +7,16 @@ import { SearchBar, VideoDetail } from './components/index'
 import youtube from './api/youtube'
 
 class App extends React.Component {
-  state = {
-    viddeo: [],
-    selectVideo: null
-  }
-
   handleSubmit = async searchTerm => {
     const response = await youtube.get('search', {
       params: {
         part: 'snippet',
         maxResults: 5,
-        key: 'AIzaSyDl2X74Rpo-B0Jq_4z35Cc5ALqdhCuyzB4',
+        key: '[AIzaSyDl2X74Rpo-B0Jq_4z35Cc5ALqdhCuyzB4]',
         q: searchTerm
       }
     })
-    this.setState({
-      videos: response.data.items,
-      selectVideo: response.data.items[0]
-    })
+    console.log(response)
   }
 
   render () {
